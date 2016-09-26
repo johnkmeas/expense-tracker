@@ -1,0 +1,15 @@
+<h1>Expense Main</h1>
+<div ng-init="getExpenses()">
+<input type="text">
+	<table class="table">
+		<tr class="table-row">
+			<th>Purchase</th>
+			<th>price</th>
+		</tr>
+		<tr ng-repeat="expense in expenses">
+			<td>{{expense.purchase}}</td>
+			<td>{{expense.price | currency}}</td>
+			<td><a href="#/expense/details/{{expense._id}}"> details</a></td>
+		</tr>
+	</table>
+</div>

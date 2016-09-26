@@ -1,0 +1,18 @@
+<div ng-init="getExpense()">
+<h1>
+	Details
+</h1>
+	<h2>
+		{{expenses.purchase}}
+	</h2>
+	<h3>
+		{{expenses.price | currency}}
+	</h3>
+	<a href="#/expense"> Go Back</a>
+	<a href="#/expense/add"> Add a purchase</a>
+</div>
+
+<div>
+	<a href="#/expense/edit/{{expenses._id}}">Edit</a> |
+	<a href="#" ng-click="removeExpense(expenses._id)">Delete</a>
+</div>
