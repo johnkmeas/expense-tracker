@@ -7,11 +7,13 @@
 	<table class="table center styled">
 		<tr class="table-row">
 			<th>Purchase</th>
-			<th>price</th>
+			<th>Price</th>
+			<th>Date</th>
 		</tr>
 		<tr ng-repeat="expense in expenses | filter:query | orderBy: 'purchase' ">
 			<td>{{expense.purchase}}</td>
 			<td class="light">{{expense.price | currency}}</td>
+			<td>{{expense.create_data | date : forma : fullDate }}</td>
 			<td><a href="#/expense/details/{{expense._id}}"> details</a></td>
 		</tr>
 	</table>
