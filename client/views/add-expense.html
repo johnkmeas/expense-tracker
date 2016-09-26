@@ -1,13 +1,13 @@
-<div>
-<h1>
-	Add Expense
-</h1>
-<form ng-submit="addExpense()">
-	<label for="">Purchase</label>
-	<input ng-model="expenses.purchase" type="text" name="purchase" placeholder="Item Purchased">
-	<label for="">Price</label>
-	<input ng-model="expenses.price" type="number" name="price" placeholder="Cost of Purchase">
-	<button type="submit">submit</button>
-</form>
-	<a href="#/expense"> Go to Main</a>
+<div class="center">
+	<h1>
+		Add Expense
+	</h1>
+	<form ng-submit="addExpense()">
+		<label for="">Purchase</label>
+		<input class="input-field" ng-model="expenses.purchase" type="text" name="purchase" placeholder="Item Purchased"><br>
+		<label for="">Price $</label>
+		<input class="input-field" ng-model="expenses.price" type="number" name="price" placeholder="Cost of Purchase">
+		<button type="submit">submit</button>
+	</form>
+		<a href="#/expense"> Go to Main</a>
 </div>

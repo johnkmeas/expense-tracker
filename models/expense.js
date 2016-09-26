@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-// Genre Schema
+// Schema
 var expenseSchema = mongoose.Schema({
 	purchase : {
 		type: String,
@@ -42,10 +42,8 @@ module.exports.updateExpense = function(id, expense, price, options, callback){
 	Expense.findOneAndUpdate(query, update, options, callback);
 }
 
-// Deletean expense
+// Delete an expense
 module.exports.deleteExpense = function(id, callback){
 	var query = {_id: id};
 	Expense.remove(query, callback);
 }
-
-

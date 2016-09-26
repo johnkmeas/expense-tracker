@@ -1,18 +1,19 @@
-<div ng-init="getExpense()">
-<h1>
-	Details
-</h1>
-	<h2>
-		{{expenses.purchase}}
-	</h2>
-	<h3>
-		{{expenses.price | currency}}
-	</h3>
-	<a href="#/expense"> Go Back</a>
-	<a href="#/expense/add"> Add a purchase</a>
-</div>
-
-<div>
-	<a href="#/expense/edit/{{expenses._id}}">Edit</a> |
-	<a href="#" ng-click="removeExpense(expenses._id)">Delete</a>
+<div ng-init="getExpense()" class=" center">
+	<div class="focus-area align">
+		<h1>
+			My purchase
+		</h1>
+			<h2>
+				{{expenses.purchase}}
+			</h2>
+			<p>
+				{{expenses.price | currency}}
+			</p>
+	</div>
+	<div>
+		<a href="#/expense"> Go Back</a>
+		<a href="#/expense/add"> Add a purchase</a>
+		<a href="#/expense/edit/{{expenses._id}}">Edit</a>
+		<a href="#" ng-click="removeExpense(expenses._id)">Delete</a>
+	</div>
 </div>
