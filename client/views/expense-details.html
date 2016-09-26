@@ -7,7 +7,12 @@
 				{{expenses.purchase}}
 			</h2>
 			<p>
-				{{expenses.price | currency}}
+				for {{expenses.price | currency}}
+			</p>
+			<br>
+			<p>
+
+			on {{expenses.create_data | date : forma : fullDate }}
 			</p>
 	</div>
 	<div>
