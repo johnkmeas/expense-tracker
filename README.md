@@ -39,3 +39,6 @@ built backend with Expressjs and Mongodb
 * **12:29pm - 1:15pm** I thought I’d style it bit to make it readable... this won't be winning any design awards but it's better than nothing.
 
 * **1:15pm- 1:40pm** Last look through for errors or trailing white space and document the project in this README file before pushing to github
+
+**Issues:**
+I've realized that once opened by a new user there was no way to add a new product because the option was only available in the details page, so if there is no purchases yet than there would be no way to add a product making this application useless. This fix took about 5 minutes.

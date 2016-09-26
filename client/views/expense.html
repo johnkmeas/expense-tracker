@@ -3,7 +3,7 @@
 		<label class="input-field" for="search-field">Search</label>
       	<input class="input-field" ng-model="query" type="text"
         placeholder="Filter by" autofocus>
-        <a href="#/expense/add"> Add a purchase</a>
+        <a href="#/expense/add">+ Add a purchase</a>
     </form>
 	<table class="table center styled">
 		<tr class="table-row">
@@ -16,6 +16,8 @@
 			<td class="light">{{expense.price | currency}}</td>
 			<td>{{expense.create_data | date : forma : fullDate }}</td>
 			<td><a href="#/expense/details/{{expense._id}}"> details</a></td>
+			<td><a href="#/expense/edit/{{expense._id}}">Edit</a></td>
+			<td><a href="#" ng-click="removeExpense(expense._id)">X</a></td>
 		</tr>
 	</table>
 </div>
